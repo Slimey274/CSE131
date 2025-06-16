@@ -26,7 +26,16 @@ def output_numbers(number, binary, octal, hex):
 
 def get_number():
     '''Obtains number from user'''
-    return 10
+    number = -1
+    while number < 0:
+        try:
+            number = int(input('Please enter in a Positive number: '))
+            if number < 0:
+                raise TypeError
+        except (ValueError, TypeError, KeyboardInterrupt, EOFError):
+            print('Invalid number please try again.')
+
+    return number
 
 def test_conversions():
     '''Tests for the conversion functions'''
@@ -34,6 +43,7 @@ def test_conversions():
 
 def main():
     number = get_number()
+    print(f'Got a good number {number}')
     binary, octal, hex = conversion(number)
     output_numbers(number, binary, octal, hex)
 
