@@ -22,7 +22,12 @@ def conversion(number):
 
 def output_numbers(number, binary, octal, hex):
     "Format output for the converted functions"
-    print(number, binary, octal, hex)
+    assert type(number) == int
+    assert type(binary) == str
+    assert type(octal) == str
+    assert type(hex) == str
+
+    print(f"Number: {number:10} Binary: {binary:>10} Octal: {octal:>10} Hex: {hex:>10}")
 
 def get_number():
     '''Obtains number from user'''
