@@ -3,11 +3,11 @@
 # 2. Assignment Name:
 #      Lab 13 : Segregation Sort Program
 # 3. Assignment Description:
-#      -describe what this program is meant to do-
+#      -This program will sort the list by segregationg the numbers and placing them in order-
 # 4. What was the hardest part? Be as specific as possible.
-#      -a paragraph or two about how the assignment went for you-
+#      -I feel that the hardest part of the program was getting the segregation to work and adding the things step by step. This was because of how the program works and how it functions. Other then that I used the stub method to make the program go easier-
 # 5. How long did it take for you to complete the assignment?
-#      -total time in hours including reading the assignment and submitting the program-
+#      -total time in hours including the report it took me 3 hours.-
 import random
 
 data = []
